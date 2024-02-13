@@ -1,0 +1,142 @@
+body {
+    background-color: #fff;
+
+}
+
+/* Header */
+header {
+    background-color: #1361AC;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    padding-right: 20px;
+}
+
+nav ul li {
+    color: #fff;
+    font-size: 16px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-right: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* Banner */
+.banner {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.main-heading {
+    margin-top: 10px;
+    font-size: 3.2em;
+}
+.sub-title{
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.menu ul li {
+    display: inline-block;
+    font-size: 14px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.carousel-div {
+    background-color: #E8F3F9;
+    padding-bottom: 4px;
+}
+
+.carousel {
+    max-width: 80%;
+    margin: 0 auto;
+    background: #ccc;
+}
+
+.carousel img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+.slick-next:before, .slick-prev:before {
+    color: blue !important;
+}
+/* Sections for Menu */
+.menu-item-sections {
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+}
+.section-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 16px 0;
+}
+.move-top{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    margin: auto;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.section-p{
+    font-size: 1em;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+.list-heading{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.menu-item-sections ul{
+    list-style-type:disc;
+    margin-left: 5%;
+}
+.menu-item-sections ul li{
+    margin-bottom: 16px;
+ }
+
+@media (max-width: 700px){
+    .main-heading {
+        margin-top: 10px;
+        font-size: 2em;
+    }
+.sub-title{
+    font-size: 1em;
+}
+}
