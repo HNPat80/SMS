@@ -44,11 +44,13 @@ nav ul li a {
     font-weight: bold;
     text-align: center;
 }
+
 .main-heading {
     margin-top: 10px;
     font-size: 3.2em;
 }
-.sub-title{
+
+.sub-title {
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -59,7 +61,10 @@ nav ul li a {
     justify-content: flex-end;
     align-items: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    padding-bottom: 10px;
+    height: 40px;
+    background: #1361AC;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(19,97,172,1) 35%, rgba(8,37,43,1) 100%); */
 }
 
 .menu ul li {
@@ -70,7 +75,16 @@ nav ul li a {
     cursor: pointer;
 }
 
-.carousel-div {
+.menu ul li a {
+    color: #fff;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* ------ Carousel -------- */
+/* .carousel-div {
     background-color: #E8F3F9;
     padding-bottom: 4px;
 }
@@ -85,24 +99,109 @@ nav ul li a {
     width: 100%;
     height: 440px;
     object-fit: cover;
-}
-
+} */
+/* 
 .slick-next:before, .slick-prev:before {
     color: blue !important;
+} */
+/* Additional styles to ensure proper carousel display */
+.owl-carousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
+
+.owl-carousel .item img {
+    width: 100%;
+    height: 300px;
+    /* Set a fixed height for all images */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover container */
+}
+
+.owl-item {
+    flex: 0 0 auto;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    font-size: 40px;
+}
+
+.owl-nav button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.owl-prev {
+    left: 10px;
+}
+
+.owl-next {
+    right: 10px;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+
+.owl-dots button {
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.owl-dots button.active {
+    background: #000;
+}
+/* Data Carasoul--- */
+.card{
+    display: block;
+    margin: 10px 0px;
+    padding: 20px 25px 10px 25px;
+    margin: 0px;
+    margin: 15px 15px;
+    padding: 20px 5px 20px 5px;
+    border: none;
+    text-align: center;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+    transition: all ease 0.5
+}
+.fa-building-ngo{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
 /* Sections for Menu */
 .menu-item-sections {
     padding: 20px;
     width: 70%;
     margin: auto;
 }
-.section-title{
+
+.section-title {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
     margin: 16px 0;
 }
-.move-top{
+
+.move-top {
     display: flex;
     justify-content: flex-end;
     width: 70%;
@@ -110,12 +209,14 @@ nav ul li a {
     font-size: 1.2em;
     cursor: pointer;
 }
-.section-p{
+
+.section-p {
     font-size: 1em;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     line-height: 24px;
 }
-.list-heading{
+
+.list-heading {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     line-height: 24px;
@@ -123,20 +224,23 @@ nav ul li a {
     font-weight: bold;
     text-decoration: underline;
 }
-.menu-item-sections ul{
-    list-style-type:disc;
+
+.menu-item-sections ul {
+    list-style-type: disc;
     margin-left: 5%;
 }
-.menu-item-sections ul li{
-    margin-bottom: 16px;
- }
 
-@media (max-width: 700px){
+.menu-item-sections ul li {
+    margin-bottom: 16px;
+}
+
+@media (max-width: 700px) {
     .main-heading {
         margin-top: 10px;
         font-size: 2em;
     }
-.sub-title{
-    font-size: 1em;
-}
+
+    .sub-title {
+        font-size: 1em;
+    }
 }
