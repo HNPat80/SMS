@@ -83,27 +83,6 @@ nav ul li a {
     }
 }
 
-/* ------ Carousel -------- */
-/* .carousel-div {
-    background-color: #E8F3F9;
-    padding-bottom: 4px;
-}
-
-.carousel {
-    max-width: 80%;
-    margin: 0 auto;
-    background: #ccc;
-}
-
-.carousel img {
-    width: 100%;
-    height: 440px;
-    object-fit: cover;
-} */
-/* 
-.slick-next:before, .slick-prev:before {
-    color: blue !important;
-} */
 /* Additional styles to ensure proper carousel display */
 .owl-carousel {
     display: flex;
@@ -123,7 +102,7 @@ nav ul li a {
     flex: 0 0 auto;
 }
 
-.owl-nav {
+.img-carousel .owl-nav {
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
@@ -134,27 +113,27 @@ nav ul li a {
     font-size: 40px;
 }
 
-.owl-nav button {
+.img-carousel .owl-nav button {
     background: transparent;
     border: none;
     font-size: 20px;
     cursor: pointer;
 }
 
-.owl-prev {
+.img-carousel .owl-prev {
     left: 10px;
 }
 
-.owl-next {
+.img-carousel .owl-next {
     right: 10px;
 }
 
-.owl-dots {
+.img-carousel .owl-dots {
     text-align: center;
 }
 
 
-.owl-dots button {
+.img-carousel .owl-dots button {
     background: transparent;
     border: none;
     border-radius: 50%;
@@ -164,11 +143,12 @@ nav ul li a {
     cursor: pointer;
 }
 
-.owl-dots button.active {
-    background: #000;
+.img-carousel .owl-dots button.active {
+    /* background: #000; */
 }
+
 /* Data Carasoul--- */
-.card{
+.card {
     display: block;
     margin: 10px 0px;
     padding: 20px 25px 10px 25px;
@@ -182,7 +162,8 @@ nav ul li a {
     z-index: 1;
     transition: all ease 0.5
 }
-.fa-building-ngo{
+
+.fa-building-ngo {
     font-size: 50px;
     margin-bottom: 10px;
 }
@@ -232,6 +213,67 @@ nav ul li a {
 
 .menu-item-sections ul li {
     margin-bottom: 16px;
+}
+/* Service Carousel */
+.services-carousel .item {
+    border: 1px solid #ccc;
+    min-height: 500px;
+    height: auto;
+    box-shadow:14px 16px 11px -4px #91989e;
+    border-radius: 15px;
+}
+.services-carousel .item .over-layer{
+    width:100%;
+    min-height: 500px;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    background: linear-gradient(-45deg, rgba(6,190,244,0.75) 0%, rgba(45,112,253,0.6) 100%);
+    transition:all 0.50s linear;
+}
+.services-carousel .item .over-layer:hover{
+    opacity:1;
+    text-decoration:none;
+    border-radius: 15px;
+}
+.services-carousel  .over-layer i{
+    position: relative;
+    top:45%;
+    text-align:center;
+    display: block;
+    color:#fff;
+    font-size:25px;
+}
+/* Other SErvices section */
+#other-services {
+    margin-top: 20px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 14x;
+}
+
+.custom-shape {
+    position: relative;
+    z-index: 88;
+    padding: 0;
+    transform: rotate(0deg) !important;
+    margin-top: 75px;
+    /* margin-bottom: -190px; */
+}
+
+.custom-shape:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background: #e8f3f9;
+        border-radius: 0 200px 0 200px;
+        transform: skewY(-6deg);
 }
 
 @media (max-width: 700px) {

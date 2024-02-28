@@ -28,7 +28,7 @@ $(document).ready(function(){
   $('#Services .data-carousel').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
+    // nav:true,
     dots: true,
     autoplay:true, // Enable auto-scrolling
     autoplayTimeout:5000, // Auto-scroll time in milliseconds (e.g., 3000ms = 3 seconds)
