@@ -248,33 +248,37 @@ nav ul li a {
 }
 /* Other SErvices section */
 #other-services {
-    margin-top: 20px;
+    margin-top: 70px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 14x;
+    box-shadow: 1px 1px 22px #ccc;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.custom-shape {
-    position: relative;
-    z-index: 88;
-    padding: 0;
-    transform: rotate(0deg) !important;
-    margin-top: 75px;
-    /* margin-bottom: -190px; */
+.other-card-main-div{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    font-size: 16px;
+    display: flex;
+}
+.card-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.other-card{
+    padding: 10px;
+    border: 1px solid #91989e;
+    border-radius: 4px;
+    /* font-size: 14px; */
+    width: 40%;
+    line-height: 18px;
+    margin-left: 20px;
 }
 
-.custom-shape:before {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0px;
-        background-repeat: no-repeat;
-        background-position: right;
-        background: #e8f3f9;
-        border-radius: 0 200px 0 200px;
-        transform: skewY(-6deg);
-}
+
 
 @media (max-width: 700px) {
     .main-heading {
