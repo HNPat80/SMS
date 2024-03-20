@@ -1,5 +1,7 @@
 body {
-    background-color: #fff;
+    /* background-color: #fff; */
+    background: rgb(2,0,36);
+    background: linear-gradient(281deg, rgba(2,0,36,1) 0%, rgba(19,97,172,1) 28%, rgba(8,37,43,1) 100%);
 
 }
 
@@ -48,12 +50,14 @@ nav ul li a {
 .main-heading {
     margin-top: 10px;
     font-size: 3.2em;
+    color: #ccc;
 }
 
 .sub-title {
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #ccc;
 }
 
 .menu {
@@ -173,6 +177,9 @@ nav ul li a {
     padding: 20px;
     width: 70%;
     margin: auto;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .section-title {
@@ -189,6 +196,10 @@ nav ul li a {
     margin: auto;
     font-size: 1.2em;
     cursor: pointer;
+    margin-bottom: 20px;
+}
+.move-top a {
+    color: #fff;
 }
 
 .section-p {
@@ -254,13 +265,14 @@ nav ul li a {
     box-shadow: 1px 1px 22px #ccc;
     padding: 20px;
     border-radius: 10px;
+
 }
 
 .other-card-main-div{
     font-family: Poppins, Arial, Helvetica, sans-serif;
     line-height: 16px;
     font-size: 16px;
-    display: flex;
+    /* display: flex; */
 }
 .card-title {
     font-family: 'Oswald', sans-serif;
@@ -273,9 +285,10 @@ nav ul li a {
     border: 1px solid #91989e;
     border-radius: 4px;
     /* font-size: 14px; */
-    width: 40%;
+    /* width: 40%; */
     line-height: 18px;
-    margin-left: 20px;
+    margin-right: 20px;
+    word-wrap: break-word
 }
 
 
