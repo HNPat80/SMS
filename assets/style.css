@@ -2,7 +2,6 @@ body {
     /* background-color: #fff; */
     background: rgb(2,0,36);
     background: linear-gradient(281deg, rgba(2,0,36,1) 0%, rgba(19,97,172,1) 28%, rgba(8,37,43,1) 100%);
-
 }
 
 /* Header */
@@ -92,6 +91,11 @@ nav ul li a {
     display: flex;
     justify-content: center;
     position: relative;
+    width: 70% !important;
+    margin: 20px auto;
+}
+.owl-carousel .owl-stage-outer{
+    padding-bottom: 20px;
 }
 
 .owl-carousel .item img {
@@ -152,6 +156,9 @@ nav ul li a {
 }
 
 /* Data Carasoul--- */
+.services-carousel .owl-carousel {
+    width: 100% !important;
+}
 .card {
     display: block;
     margin: 10px 0px;
@@ -226,9 +233,16 @@ nav ul li a {
     margin-bottom: 16px;
 }
 /* Service Carousel */
+#Services .move-top {
+    margin-bottom: 0;
+    width: 100%;
+}
+#Services .move-top a {
+    color: #000;
+}
 .services-carousel .item {
-    border: 1px solid #ccc;
-    min-height: 500px;
+    border: 1px solid aliceblue;
+    min-height: 400px;
     height: auto;
     box-shadow:14px 16px 11px -4px #91989e;
     border-radius: 15px;
@@ -261,16 +275,18 @@ nav ul li a {
 #other-services {
     margin-top: 70px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 14x;
-    box-shadow: 1px 1px 22px #ccc;
+    font-size: 16px;
+    /* box-shadow: 1px 1px 22px #ccc; */
     padding: 20px;
-    border-radius: 10px;
+    line-height: 22px;    
+    /* border-radius: 10px; */
 
 }
 
 .other-card-main-div{
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    line-height: 16px;
+    line-height: 22px;
+    padding: 20px;
     font-size: 16px;
     /* display: flex; */
 }
@@ -278,19 +294,68 @@ nav ul li a {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     margin-bottom: 10px;
-    text-align: center;
+    /* text-align: center; */
 }
 .other-card{
     padding: 10px;
-    border: 1px solid #91989e;
+    /* border: 1px solid #91989e; */
     border-radius: 4px;
     /* font-size: 14px; */
     /* width: 40%; */
-    line-height: 18px;
-    margin-right: 20px;
+    line-height: 22px;
+    /* margin-right: 20px; */
     word-wrap: break-word
 }
+/* ---Footer----- */
+footer .menu-item-sections .section-title {
+    font-size: 22px;
+    margin: 16px 100px;
+    line-height: 40px;
+    text-decoration: underline;
+    text-align: center;
+}
 
+.address-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    /* background-color: #f0f0f0; */
+    border-radius: 5px;
+    /* background: url("./images/office-img.jpg") no-repeat;
+    background-size: cover; */
+  }
+  
+  .address-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  footer .menu-item-sections .address-container .section-title {
+    margin:0 0 20px;
+    text-align: unset;
+  }
+  
+  .address-details {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    font-size: 16px;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  
+  .contact-info span {
+    font-weight: bold;
+  }
+  
+  .contact-info a {
+    color: blue;
+    text-decoration: none;
+  }
 
 
 @media (max-width: 700px) {
